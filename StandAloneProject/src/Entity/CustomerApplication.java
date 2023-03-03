@@ -6,7 +6,7 @@ public class CustomerApplication {
 	
 static Scanner scanner = new Scanner(System.in);
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NoSufficientBalanceException {
 		
 		ServiceImplementation service = new ServiceImplementation();
         boolean isRunning = true;
@@ -29,14 +29,15 @@ static Scanner scanner = new Scanner(System.in);
 			 service.displayCustomerDetails();
 				break;
 			case 3:
-				//service.searchByCustomerNumber();
-				break;
+			  service.searchCustomerDetails();
+			  break;
 			case 4:
-				// depositTheAmount();
+				 service.depositTheAmount();;
 				break;
 			case 5:
-				// withdrawTheAmount();
-				break;
+			//service.withdrawTheAmount();
+				//service.withdraw();
+			break;
 			case 6:
 				// deleteTheCustomer();
 				break;
@@ -52,6 +53,8 @@ static Scanner scanner = new Scanner(System.in);
 			}}while(isRunning);
 		
 	}
+
+
 	}
 		
 	

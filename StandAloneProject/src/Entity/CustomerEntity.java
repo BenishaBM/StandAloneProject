@@ -1,7 +1,4 @@
 package Entity;
-
-import java.time.LocalDate;
-
 public class CustomerEntity {
 	private int custId;
 	private String firstName;
